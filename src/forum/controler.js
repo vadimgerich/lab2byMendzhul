@@ -30,7 +30,7 @@ const forumControler = {
     }, 
     async post (req, res) {
         try {
-            const forum = new lot(req.body);
+            const forum = new forum(req.body);
             await forum.save();
             res.send(forum);
     
